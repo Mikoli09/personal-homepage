@@ -10,7 +10,7 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     body {
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-family: "Inter", sans-serif;
         background-color: ${(props)=> props.theme.colors.background};
         margin:0;
     }

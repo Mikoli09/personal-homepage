@@ -5,6 +5,7 @@ export const StyledHeader = styled.div`
     flex-direction: row;
     justify-content: center;
     max-width: 1216px;
-    margin: 100px;
-    gap:50px;
+    margin: 100px 0;
+    gap: 72px;
+    background-color: ${({theme}) => theme.colors.white };
 `;
