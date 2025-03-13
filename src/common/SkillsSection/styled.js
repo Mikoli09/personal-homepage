@@ -5,17 +5,18 @@ export const StyledSection = styled.section`
     text-align: center;
     margin: 36px auto;
     padding: 0px 32px; 
-    background-color: ${({theme}) => theme.colors.white };
+    background-color: ${({theme}) => theme.section.background };
+    transition: 0.3s;
 `;
 
 export const SectionHeader = styled.h2`
-    color: ${({theme}) => theme.colors.mineShaft } ;
+    color: ${({theme}) => theme.header.text } ;
     padding: 32px 32px 12px 0px;
     margin: 0px;
     text-align: left;
     font-size: 30px;
     font-weight: 900;
     border-bottom: solid 1px;
-    border-color: ${(props) => props.theme.colors.mercury } ;
+    border-color: ${({theme}) => theme.header.border } ;
 `;
 

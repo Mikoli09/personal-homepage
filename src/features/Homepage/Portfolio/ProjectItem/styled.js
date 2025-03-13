@@ -5,7 +5,7 @@ export const StyledH3 = styled.h3`
     font-size: 24px;
     font-weight: 700;
     letter-spacing: 1.2px;
-    color: ${({ theme }) => theme.colors.scienceBlue};
+    color: ${({ theme }) => theme.header.h3};
 `;
 
 export const Description = styled.p`
@@ -14,5 +14,9 @@ export const Description = styled.p`
     line-height: 1.4;
     letter-spacing: 0.9px;
     text-align: left;
+    color: ${({ theme }) => theme.header.h3};
 `;
 
+export const Anchor = styled.a`
+    text-decoration: underline;
+`;

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {ReactComponent as Marker} from './marker.svg'
+import { ReactComponent as Marker } from './marker.svg'
 
 export const List = styled.ul`
     display: grid;
@@ -11,7 +11,7 @@ export const List = styled.ul`
     text-align: left;
     line-height: 1.4;
     letter-spacing: 0.9px;
-    color: ${({ theme }) => theme.colors.slateGray};
+    color: ${({ theme }) => theme.list.text};
 `;
 
 export const ListItem = styled.li`
@@ -25,6 +25,7 @@ export const ListItem = styled.li`
 
 export const MarkerPic = styled(Marker)`
     margin-right: 16px;
+    fill: ${({ theme }) => theme.marker.fill};
     /* display: inline-block; */
     /* flex-shrink: 0; */
 `;

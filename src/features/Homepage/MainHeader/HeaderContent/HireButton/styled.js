@@ -9,7 +9,17 @@ export const HireButton = styled.button`
     border: 1px;
     border-radius: 4px;
     color: white;
-    background-color: ${({theme}) => theme.colors.scienceBlue };
+    background-color: ${({ theme }) => theme.button.background};
     font-weight: 600;
     font-size: 20.06px;
+    transition: 0.3s;
+
+    &:hover {
+        cursor: pointer;
+        box-shadow: 0 0 0 2px ${({ theme }) => theme.button.backgroundHover} ;
+        }
+
+    &:active {
+        box-shadow: 0 -2px 2px rgba(20, 70, 32, 0.2);
+    }
 `;

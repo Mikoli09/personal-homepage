@@ -1,6 +1,6 @@
 import { SectionHeader, StyledSection } from "./styled"
 
-export const SkillsSection = ({ headerContent, sectionContent }) => (
+export const Section = ({ headerContent, sectionContent }) => (
     <StyledSection>
         <SectionHeader>
             {headerContent}

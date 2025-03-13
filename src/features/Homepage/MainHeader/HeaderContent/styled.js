@@ -1,8 +1,10 @@
 import styled from "styled-components";
 
 export const StyledHeaderContent = styled.div`
+    position: relative;
     display:flex;
     justify-content: center;
     flex-direction: column;
-    flex-grow: 1;
+    margin:0;
+    /* flex-grow: 1; */
 `;
