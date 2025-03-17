@@ -1,10 +1,8 @@
-import { Profile } from "./HeaderContent";
-import { ThemeButton } from "./Theme/styled";
-import { ProfilePicture } from "./ProfilePicture/styled";
+import { Profile } from "./Profile";
+import { ProfilePicture } from "./Picture/styled";
 import { StyledHeader } from "./styled";
 import { useDispatch } from "react-redux";
-import { toggleTheme } from "../../../homepageSlice";
-
+import { ThemeSwitcher } from "./ThemeSwitcher";
 
 export const HeaderContainer = () => {
     // dodaj picture source w ProfilePicture
@@ -13,11 +11,7 @@ export const HeaderContainer = () => {
     return (
         <StyledHeader>
             <ProfilePicture src={`${process.env.PUBLIC_URL}/assets/Marcin.jpg`} alt="Marcin" />
-            <ThemeButton
-                onClick={() => dispatch(toggleTheme())}
-            >
-                Theme button
-            </ThemeButton>
+            <ThemeSwitcher />
             <Profile />
         </StyledHeader>
     )

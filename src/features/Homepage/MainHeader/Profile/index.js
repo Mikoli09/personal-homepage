@@ -3,6 +3,7 @@ import { StyledHeaderContent } from "./styled";
 import { Caption } from "../../../../common/Caption/styled";
 import { HeaderName } from "../../../../common/H1/styled";
 import { LeadParagraph } from "../../../../common/Paragraph/styled";
+import { ThemeSwitcher } from "../ThemeSwitcher";
 
 export const Profile = () => (
     <StyledHeaderContent>
