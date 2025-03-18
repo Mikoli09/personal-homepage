@@ -1,7 +1,7 @@
 import styled, { keyframes } from "styled-components";
 import { Caption } from "../../../../common/Caption/styled";
 import { ReactComponent as Toggle } from './toggle.svg'
-import { ReactComponent as Brightness } from './brightness 1.svg'
+import { ReactComponent as Sun } from './sun.svg'
 
 const moveRight = keyframes`
   0% {
@@ -60,22 +60,28 @@ export const StyledThemeButton = styled.button`
     top: 0px;
     right: 0px; 
 
-    border: 1px;
+    border: 1px solid;
+    border-color: ${({ theme }) => theme.buttonWrapper.toggle};;
     border-radius: 20px;
 
     cursor: pointer;
     overflow: hidden;
+
 `;
 
 export const ToggleSVG = styled(Toggle)`
     position: absolute;
-    animation: ${({ $isDark }) => ($isDark ? moveLeft : moveRight)} 0.5s forwards;
+    transition: color 0.3s;
+    color: ${({ theme }) => theme.buttonWrapper.toggle};
+    animation: ${({ $isDark }) => ($isDark ? moveRight : moveLeft)} 0.5s forwards;
 `;
 
-export const BrightnessSVG = styled(Brightness)`
-    fill: ${({ theme }) => theme.marker.fill};
+export const SunSVG = styled(Sun)`
     position: absolute;
-    animation: ${({ $isDark }) => ($isDark ? moveLeft : moveRight)} 0.5s forwards;
+    transition: color 0.3s;
+    color: ${({ theme }) => theme.buttonWrapper.sun};
+    animation: ${({ $isDark }) => ($isDark ? moveRight : moveLeft)} 0.5s forwards;
+
 `;
 
 export const ButtonWrapper = styled.div`
@@ -83,4 +89,7 @@ export const ButtonWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+
+
+
 `;

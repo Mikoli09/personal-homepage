@@ -1,22 +1,16 @@
-import { StyledThemeButton, ToggleSVG, BrightnessSVG, ButtonWrapper } from "../styled";
+import { StyledThemeButton, ToggleSVG, SunSVG, ButtonWrapper } from "../styled";
 import { useDispatch, useSelector } from "react-redux";
 import { toggleTheme } from "../../../homepageSlice";
 import { selectThemeDark } from "../../../homepageSlice";
 
 export const ThemeButton = () => {
-    const darkActive = useSelector(selectThemeDark);
+    const darkThemeActive = useSelector(selectThemeDark);
 
     return (
         <StyledThemeButton>
             <ButtonWrapper>
-                <ToggleSVG
-                    $isDark={darkActive}
-                >
-                </ToggleSVG>
-                <BrightnessSVG
-                    $isDark={darkActive}
-                >
-                </BrightnessSVG>
+                <ToggleSVG $isDark={darkThemeActive} />
+                <SunSVG $isDark={darkThemeActive} />
             </ButtonWrapper>
         </StyledThemeButton>
     )

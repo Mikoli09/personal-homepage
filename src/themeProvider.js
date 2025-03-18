@@ -60,6 +60,11 @@ export const ThemeLight = {
         background: colors.scienceBlue,
         backgroundHover: colors.anakiwa,
     },
+    buttonWrapper: {
+        sun: colors.white,
+        toggle: colors.slateGray,
+        border: colors.slateGray,
+    },
     marker: {
         fill: colors.scienceBlue,
     },
@@ -120,6 +125,11 @@ export const ThemeDark = {
     button: {
         background: colors.scienceBlue,
         backgroundHover: colors.anakiwa,
+    },
+    buttonWrapper: {
+        sun: colors.mineShaft,
+        toggle: colors.white,
+        border: colors.white
     },
     marker: {
         fill: colors.dodgerBlue,

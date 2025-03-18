@@ -4,16 +4,14 @@ import { toggleTheme } from "../../homepageSlice";
 import { ThemeButton } from "./ThemeButton";
 import { selectThemeDark } from "../../homepageSlice";
 
-
-
 export const ThemeSwitcher = () => {
     const dispatch = useDispatch();
-    const isDark = useSelector(selectThemeDark);
+    const isDarkTheme = useSelector(selectThemeDark);
 
     return (
         <SwitcherContainer onClick={() => dispatch(toggleTheme())}>
             <ModeLabel>
-                Dark mode {isDark ? "on" : "off"}</ModeLabel>
+                Dark mode {isDarkTheme ? "on" : "off"}</ModeLabel>
             <ThemeButton />
         </SwitcherContainer>
     )

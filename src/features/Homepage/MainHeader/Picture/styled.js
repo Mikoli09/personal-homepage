@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const ProfilePicture = styled.img`
+export const Picture = styled.img`
     width: 30vw;
     height: auto;
     max-width: 384px;

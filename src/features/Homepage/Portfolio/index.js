@@ -1,5 +1,3 @@
-import { PortfolioList, PortfolioSection, Project } from "./styled";
-import { ProjectItem } from "./ProjectItem";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchRepositoriesRequest } from "../homepageSlice";
