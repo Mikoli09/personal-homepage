@@ -44,3 +44,12 @@ export const StyleIcon = Icon => styled(Icon)`
         width: 32px;
     }
 `;
+
+export const StyleGitHub = styled.svg`
+    height: auto;
+    color: #0366D6;
+
+    @media (max-width: 800px) {
+        width: 32px;
+    }
+`;

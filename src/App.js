@@ -31,9 +31,7 @@ function App() {
           headerContent={"What I want to learn next 🚀"}
           sectionContent={<Skills list={toLearnList} />}
         />
-        <Portfolio
-          projects={projects}
-        />
+        <Portfolio />
         <Footer />
       </MainContainer>
     </ThemeProvider >

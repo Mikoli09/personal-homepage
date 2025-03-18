@@ -1,11 +1,11 @@
 import { FooterParagraph } from "../../../common/Paragraph/styled";
-import { SocialsList, SocialsItem, StyledFooter } from "./styled";
+import { StyledFooter } from "./styled";
 import { Caption } from "../../../common/Caption/styled";
 import { FooterEmail } from "../../../common/H1/styled";
 import { Socials } from "./Socials";
 
 export const Footer = () => (
-    <StyledFooter>
+    <StyledFooter id="contact">
         <Caption>Let’s talk!</Caption>
         <FooterEmail>osojca.marcin1@gmail.com</FooterEmail>
         <FooterParagraph>
@@ -13,6 +13,5 @@ export const Footer = () => (
         </FooterParagraph>
         <Socials />
     </StyledFooter>
-
 );
 

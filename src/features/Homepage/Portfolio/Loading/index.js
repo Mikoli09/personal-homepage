@@ -1,12 +1,12 @@
+import { LeadParagraph } from "../../../../common/Paragraph/styled";
 import { LoadingWrapper, SpinnerSVG } from "../styled";
+import { PortfolioHeader } from "../PortfolioHeader";
 
 
-export const Loading = () => {
-
-    return (
-        <LoadingWrapper>
-            <p>Please wait, projects are being loaded...</p>
-            <SpinnerSVG />
-        </LoadingWrapper>
-    )
-};
+export const Loading = () => (
+    <LoadingWrapper>
+        <PortfolioHeader />
+        <LeadParagraph>Please wait, projects are being loaded...</LeadParagraph>
+        <SpinnerSVG />
+    </LoadingWrapper>
+);

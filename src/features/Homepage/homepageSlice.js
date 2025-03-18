@@ -6,7 +6,7 @@ const homepageSlice = createSlice({
         repositories: [],
         pageThemeDark: false,
         loading: false,
-        error: null,
+        error: false,
     },
     reducers: {
         toggleTheme: (state, action) => {
@@ -21,7 +21,8 @@ const homepageSlice = createSlice({
             state.loading = false;
         },
         fetchRepositoriesFailure: (state, action) => {
-
+            state.error = true;
+            state.loading = false;
         },
     }
 });
@@ -32,6 +33,7 @@ export const { toggleTheme, fetchRepositoriesRequest, fetchRepositoriesSuccess, 
 export const selectThemeDark = (state) => state.homepage.pageThemeDark;
 export const selectRepositories = (state) => state.homepage.repositories;
 export const selectLoading = (state) => state.homepage.loading;
+export const selectError = (state) => state.homepage.error;
 
 
 export const myHomepageReducer = homepageSlice.reducer; 

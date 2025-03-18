@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const HireButton = styled.button`
+export const HireButton = styled.a`
     width: 154px;
     height: 49px;
     padding: 12px 16px;
@@ -12,6 +12,8 @@ export const HireButton = styled.button`
     background-color: ${({ theme }) => theme.button.background};
     font-weight: 600;
     font-size: 20.06px;
+    text-align: center;
+    text-decoration: none;
     transition: 0.3s;
 
     &:hover {

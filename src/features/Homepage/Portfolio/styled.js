@@ -16,12 +16,11 @@ export const PortfolioSection = styled.section`
     margin: 0;
 `;
 
-export const LoadingWrapper = styled.section`
+export const LoadingWrapper = styled(PortfolioSection)`
     background-color: ${({ theme }) => theme.section.portfolio.background} ;
     padding: 0;
     margin: 0;
     text-align: center;
-
 `;
 
 export const SpinnerSVG = styled(Spinner)`
@@ -39,13 +38,6 @@ export const PortfolioList = styled.ul`
     background-color: ${({ theme }) => theme.list.background};
 `;
 
-export const PortfolioHeader = styled.header`
-    text-align: center;
-    font-size: 30px;
-    padding: 20px 0;
-    color: ${({ theme }) => theme.header.text};
-`;
-
 export const Project = styled.li`
     list-style: none;
     padding: 56px;
@@ -54,4 +46,3 @@ export const Project = styled.li`
     border-color: ${({ theme }) => theme.list.item.border};
     background-color: ${({ theme }) => theme.list.item.background};
 `;
-
