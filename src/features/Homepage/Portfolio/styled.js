@@ -1,9 +1,32 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+import { ReactComponent as Spinner } from './Loading/icon-spinner.svg'
+
+const rotation = keyframes`
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+    `;
 
 export const PortfolioSection = styled.section`
     background-color: ${({ theme }) => theme.section.portfolio.background} ;
     padding: 0;
     margin: 0;
+`;
+
+export const LoadingWrapper = styled.section`
+    background-color: ${({ theme }) => theme.section.portfolio.background} ;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+
+`;
+
+export const SpinnerSVG = styled(Spinner)`
+  animation: ${rotation} 1s linear normal infinite ;
+
 `;
 
 export const PortfolioList = styled.ul`

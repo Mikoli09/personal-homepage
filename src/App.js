@@ -11,7 +11,7 @@ import { Portfolio } from './features/Homepage/Portfolio';
 import { projects } from './features/Homepage/Portfolio/projectList';
 import { Footer } from './features/Homepage/Footer';
 import { ThemeLight, ThemeDark } from './themeProvider';
-import { selectThemeDark } from './homepageSlice';
+import { selectThemeDark } from './features/Homepage/homepageSlice';
 import { useSelector } from 'react-redux';
 
 function App() {
@@ -34,7 +34,7 @@ function App() {
         <Portfolio
           projects={projects}
         />
-        <Footer>Footer</Footer>
+        <Footer />
       </MainContainer>
     </ThemeProvider >
   );
