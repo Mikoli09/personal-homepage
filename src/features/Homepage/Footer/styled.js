@@ -21,12 +21,21 @@ export const SocialsItem = styled.li`
     cursor: pointer;
 `;
 
+export const StyleGitHub = styled.svg`
+    height: auto;
+    color: ${({ theme }) => theme.colors.link.hover};
+
+    @media (max-width: 800px) {
+        width: 32px;
+    }
+`;
+
 export const Link = styled.a`
-    color: black;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     transition: 0.3s ;
+    color: ${({ theme }) => theme.colors.link.icon};
 
     @media (max-width: 800px) {
         width: 32px;
@@ -39,15 +48,6 @@ export const Link = styled.a`
 
 export const StyleIcon = Icon => styled(Icon)`
     height: auto;
-
-    @media (max-width: 800px) {
-        width: 32px;
-    }
-`;
-
-export const StyleGitHub = styled.svg`
-    height: auto;
-    color: #0366D6;
 
     @media (max-width: 800px) {
         width: 32px;

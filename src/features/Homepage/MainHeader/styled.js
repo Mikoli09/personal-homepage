@@ -8,7 +8,7 @@ export const StyledHeader = styled.header`
     max-width: 1216px;
     margin: 100px 0;
     gap: 72px;
-    background-color: ${({ theme }) => theme.mainHeader.background};
+    background-color: ${({ theme }) => theme.colors.mainHeader.background};
     z-index: 1;
     transition: 0.3s;
 

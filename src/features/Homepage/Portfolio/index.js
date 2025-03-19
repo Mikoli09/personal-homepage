@@ -1,22 +1,20 @@
-import { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { fetchRepositoriesRequest } from "../homepageSlice";
-import { selectLoading, selectError } from "../homepageSlice";
+import { useSelector } from "react-redux";
+import { selectStatus } from "../homepageSlice";
 import { Loading } from "./Loading";
 import { PortfolioContainer } from "./Portfolio";
 import { LoadingError } from "./LoadingError";
-
+import { useFetchRepositories } from "./useFetchRepositories";
 
 export const Portfolio = () => {
-    const dispatch = useDispatch();
-    const loading = useSelector(selectLoading);
-    const error = useSelector(selectError);
+    useFetchRepositories();
+    const status = useSelector(selectStatus);
 
-    useEffect(() => {
-        dispatch(fetchRepositoriesRequest());
-    }, []);
-
-    return (
-        loading ? <Loading /> : (error ? <LoadingError /> : <PortfolioContainer />)
-    )
+    switch (status) {
+        case "LOADING":
+            return <Loading />;
+        case "ERROR":
+            return <LoadingError />;
+        case "SUCCESS":
+            return <PortfolioContainer />;
+    }
 };

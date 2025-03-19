@@ -8,7 +8,6 @@ import { Skills } from './features/Homepage/SkillsSection';
 import { skillsList } from './common/List/skillsList';
 import { toLearnList } from './common/toLearnList';
 import { Portfolio } from './features/Homepage/Portfolio';
-import { projects } from './features/Homepage/Portfolio/projectList';
 import { Footer } from './features/Homepage/Footer';
 import { ThemeLight, ThemeDark } from './themeProvider';
 import { selectThemeDark } from './features/Homepage/homepageSlice';

@@ -5,7 +5,7 @@ export const HeaderName = styled.h1`
     font-weight: 900;
     margin: 0;
     line-height: 1.0;
-    color: ${({theme}) => theme.header.headerName };
+    color: ${({theme}) => theme.colors.header.headerName };
 `;
 
 export const FooterEmail = styled(HeaderName)`

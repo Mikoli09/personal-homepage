@@ -11,7 +11,7 @@ export const List = styled.ul`
     text-align: left;
     line-height: 1.4;
     letter-spacing: 0.9px;
-    color: ${({ theme }) => theme.list.text};
+    color: ${({ theme }) => theme.colors.list.text};
 `;
 
 export const ListItem = styled.li`
@@ -25,7 +25,7 @@ export const ListItem = styled.li`
 
 export const MarkerPic = styled(Marker)`
     margin-right: 16px;
-    fill: ${({ theme }) => theme.marker.fill};
+    fill: ${({ theme }) => theme.colors.marker.fill};
     /* display: inline-block; */
     /* flex-shrink: 0; */
 `;

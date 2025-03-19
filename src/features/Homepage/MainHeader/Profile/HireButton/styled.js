@@ -9,7 +9,7 @@ export const HireButton = styled.a`
     border: 1px;
     border-radius: 4px;
     color: white;
-    background-color: ${({ theme }) => theme.button.background};
+    background-color: ${({ theme }) => theme.colors.button.background};
     font-weight: 600;
     font-size: 20.06px;
     text-align: center;
@@ -18,7 +18,7 @@ export const HireButton = styled.a`
 
     &:hover {
         cursor: pointer;
-        box-shadow: 0 0 0 2px ${({ theme }) => theme.button.backgroundHover} ;
+        box-shadow: 0 0 0 2px ${({ theme }) => theme.colors.button.backgroundHover} ;
         }
 
     &:active {

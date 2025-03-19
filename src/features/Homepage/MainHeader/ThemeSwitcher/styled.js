@@ -41,7 +41,7 @@ export const ModeLabel = styled(Caption)`
     z-index: 2;
 
 
-    @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
+    @media (max-width: ${({ theme }) => theme.colors.breakpoints.mobile}px) {
       display: none;
     }
 `;
@@ -61,7 +61,7 @@ export const StyledThemeButton = styled.button`
     right: 0px; 
 
     border: 1px solid;
-    border-color: ${({ theme }) => theme.buttonWrapper.toggle};;
+    border-color: ${({ theme }) => theme.colors.buttonWrapper.toggle};;
     border-radius: 20px;
 
     cursor: pointer;
@@ -72,14 +72,14 @@ export const StyledThemeButton = styled.button`
 export const ToggleSVG = styled(Toggle)`
     position: absolute;
     transition: color 0.3s;
-    color: ${({ theme }) => theme.buttonWrapper.toggle};
+    color: ${({ theme }) => theme.colors.buttonWrapper.toggle};
     animation: ${({ $isDark }) => ($isDark ? moveRight : moveLeft)} 0.5s forwards;
 `;
 
 export const SunSVG = styled(Sun)`
     position: absolute;
     transition: color 0.3s;
-    color: ${({ theme }) => theme.buttonWrapper.sun};
+    color: ${({ theme }) => theme.colors.buttonWrapper.sun};
     animation: ${({ $isDark }) => ($isDark ? moveRight : moveLeft)} 0.5s forwards;
 
 `;

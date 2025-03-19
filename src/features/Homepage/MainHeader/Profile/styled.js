@@ -6,5 +6,4 @@ export const StyledHeaderContent = styled.div`
     justify-content: center;
     flex-direction: column;
     margin:0;
-    /* flex-grow: 1; */
 `;
