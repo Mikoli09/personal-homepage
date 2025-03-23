@@ -1,12 +1,12 @@
 import { StyledLinkContainer } from "../ProjectItem/styled";
-import { Description } from "../ProjectItem/styled";
+import { ProjectDescription } from "../ProjectItem/styled";
 import { ProjectLink } from "../ProjectItem/styled";
 
 export const LinkContainer = ({href, description}) => {
 
     return (
         <StyledLinkContainer>
-            <Description>{description}</Description>
+            <ProjectDescription>{description}</ProjectDescription>
             <ProjectLink
                 href={href}
                 target="_blank"
@@ -16,5 +16,4 @@ export const LinkContainer = ({href, description}) => {
             </ProjectLink>
         </StyledLinkContainer>
     )
-
 };

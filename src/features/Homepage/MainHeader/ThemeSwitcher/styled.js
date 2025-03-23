@@ -40,8 +40,7 @@ export const ModeLabel = styled(Caption)`
     margin-bottom: 0;
     z-index: 2;
 
-
-    @media (max-width: ${({ theme }) => theme.colors.breakpoints.mobile}px) {
+    @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
       display: none;
     }
 `;

@@ -7,10 +7,14 @@ export const StyledH3 = styled.h3`
     font-weight: 700;
     letter-spacing: 1.2px;
     color: ${({ theme }) => theme.colors.header.h3};
+    margin-top: 0px;
+    margin-bottom: 24px;
 `;
 
 export const Description = styled.p`
     display: inline-block;
+    margin-top: 0px;
+    margin-bottom: 16px;
     font-size: 18px;
     font-weight: 400;
     line-height: 1.4;
@@ -19,11 +23,16 @@ export const Description = styled.p`
     color: ${({ theme }) => theme.colors.paragraph.description};
 `;
 
+export const ProjectDescription = styled(Description)`
+    margin: 0;
+`;
+
 export const ProjectLink = styled(Link)`
     display: inline;
     word-break: break-all;
     color: ${({ theme }) => theme.colors.anchor.text};
     text-decoration: underline ${({ theme }) => theme.colors.anchor.underline};
+    width: auto;
 `;
 
 export const StyledLinkContainer = styled(Description)`
@@ -31,5 +40,6 @@ export const StyledLinkContainer = styled(Description)`
     align-items: baseline;
     grid-gap: 8px;
     grid-template-columns: auto 1fr;
-
+    margin-top: 8px;
+    margin-bottom: 0;
 `;

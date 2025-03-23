@@ -3,10 +3,15 @@ import styled from "styled-components";
 export const StyledSection = styled.section`
     max-width: 1216px;
     text-align: center;
-    margin: 36px auto;
+    /* margin: 36px auto; */
+    margin: 36px 36px;
     padding: 0px 32px; 
     background-color: ${({theme}) => theme.colors.section.background };
     transition: 0.3s;
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
+        margin: 36px 14px;
+    }
 `;
 
 export const SectionHeader = styled.h2`
@@ -19,4 +24,3 @@ export const SectionHeader = styled.h2`
     border-bottom: solid 1px;
     border-color: ${({theme}) => theme.colors.header.border } ;
 `;
-

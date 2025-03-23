@@ -13,14 +13,14 @@ const rotation = keyframes`
 export const PortfolioSection = styled.section`
     background-color: ${({ theme }) => theme.colors.section.portfolio.background} ;
     padding: 0;
-    margin: 0;
+    margin: 0 36px;
     text-align: center;
 `;
 
 export const LoadingWrapper = styled(PortfolioSection)`
     background-color: ${({ theme }) => theme.colors.section.portfolio.background} ;
     padding: 0;
-    margin: 0;
+    margin: 0 36px;
     text-align: center;
 `;
 
@@ -52,6 +52,13 @@ export const Project = styled.li`
     border-radius: 4px;
     border-color: ${({ theme }) => theme.colors.list.item.border};
     background-color: ${({ theme }) => theme.colors.list.item.background};
+    box-shadow: 0px 16px 58px 0px ${({ theme }) => theme.colors.list.item.shadowTop},
+                0px -2px 50px 0px ${({ theme }) => theme.colors.list.item.shadowBottom} ;
+    transition: 0.3s;
+
+    &:hover {
+      border-color: ${({ theme }) => theme.colors.list.item.borderHover}
+    }
 
     @media (max-width: ${({ theme }) => theme.breakpoints.tablet}px) {
         max-width: 100%;

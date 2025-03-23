@@ -5,7 +5,7 @@ import { StyledH3Error } from "./styled";
 import { GitHubButton } from "./styled";
 
 export const LoadingError = () => (
-    < LoadingWrapper >
+    <LoadingWrapper >
         <PortfolioHeader />
         <StyledH3Error>
             Ooops! Something went wrong...

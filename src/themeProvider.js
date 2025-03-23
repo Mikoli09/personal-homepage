@@ -18,6 +18,9 @@ const colors = {
     anakiwa: "#8CC2FF",
     iron: "rgba(209, 213, 218, 0.3)",
     dodgerBlue: "#2188FF",
+    midnightNavy:"rgb(9, 10, 51, 0.03)",
+    faintMidnightNavy:"rgba(9, 10, 51, 0.02)",
+    waterBlue: "rgba(3, 102, 214, 0.2)",
 }
 
 export const ThemeLight = {
@@ -63,7 +66,11 @@ export const ThemeLight = {
             item: {
                 background: colors.white,
                 border: colors.iron,
-            }
+                borderHover: colors.waterBlue,
+                shadowTop: colors.midnightNavy,
+                shadowBottom: colors.faintMidnightNavy,
+            },
+            
         },
         button: {
             background: colors.scienceBlue,
@@ -90,12 +97,10 @@ export const ThemeLight = {
             iron: "rgba(209, 213, 218, 0.3)",
             anakiwa: "#8CC2FF",
         },
-        breakpoints: {
-            mobile: 767,
-            tablet: 1206,
-        }
     },
 };
+
+console.log(ThemeLight);
 
 export const ThemeDark = {
     ...theme,
@@ -140,6 +145,9 @@ export const ThemeDark = {
             item: {
                 background: colors.mineShaftLight,
                 border: colors.iron,
+                borderHover: colors.waterBlue,
+                shadowTop: colors.midnightNavy,
+                shadowBottom: colors.faintMidnightNavy,
             }
         },
         button: {
@@ -167,9 +175,5 @@ export const ThemeDark = {
             iron: "rgba(209, 213, 218, 0.3)",
             anakiwa: "#8CC2FF",
         },
-        breakpoints: {
-            mobile: 767,
-            tablet: 1206,
-        }
     },
 };

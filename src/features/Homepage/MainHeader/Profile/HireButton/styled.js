@@ -4,8 +4,8 @@ export const HireButton = styled.a`
     width: 154px;
     height: 49px;
     padding: 12px 16px;
-    margin: 10px;
-    margin-right: auto;
+    margin: 8px auto 0px 0px;
+    /* margin-right: auto; */
     border: 1px;
     border-radius: 4px;
     color: white;

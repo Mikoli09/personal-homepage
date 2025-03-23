@@ -6,7 +6,7 @@ export const StyledHeader = styled.header`
     grid-template-columns: auto 1fr;
     justify-content: center;
     max-width: 1216px;
-    margin: 100px 0;
+    margin: 100px 36px;
     gap: 72px;
     background-color: ${({ theme }) => theme.colors.mainHeader.background};
     z-index: 1;

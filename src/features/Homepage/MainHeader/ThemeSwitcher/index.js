@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from "react-redux";
-import { StyledThemeButton, SwitcherContainer, ModeLabel, ToggleSVG } from "./styled";
+import { SwitcherContainer, ModeLabel, ToggleSVG } from "./styled";
 import { toggleTheme } from "../../homepageSlice";
 import { ThemeButton } from "./ThemeButton";
 import { selectThemeDark } from "../../homepageSlice";

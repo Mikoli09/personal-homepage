@@ -5,8 +5,12 @@ export const Caption = styled.p`
     font-weight: 700;
     line-height: 1.3;
     color: ${({ theme }) => theme.colors.caption.text};
-    margin-top: 38px;
+    margin-top: 64px;
     margin-bottom: 12px;
-    /* padding-top: 10px; */
     text-transform: uppercase;
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
+        margin-top: 16px;
+        margin-bottom: 8px;
+    }
 `;

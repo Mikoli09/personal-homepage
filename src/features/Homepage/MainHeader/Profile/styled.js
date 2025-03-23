@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
 export const StyledHeaderContent = styled.div`
-    position: relative;
+    /* position: relative; */
     display:flex;
-    justify-content: center;
+    justify-content: flex-start;
     flex-direction: column;
     margin:0;
 `;
