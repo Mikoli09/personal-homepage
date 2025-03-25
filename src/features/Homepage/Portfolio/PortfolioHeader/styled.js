@@ -8,5 +8,10 @@ export const PortfolioHeaderContainer = styled.header`
 export const PortfolioHeaderText = styled(SectionHeader)`
     text-align: center;
     border-bottom: none;
-    padding: 32px 0px 12px 0px;
+    padding: 12px 0 8px 0;
+    margin: 0;
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
+        padding: 12px 0 16px 0;
+    }
 `;

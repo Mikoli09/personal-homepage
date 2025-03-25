@@ -1,19 +1,21 @@
-import { LoadingWrapper } from "../styled";
+import { LoadingSection } from "../styled";
 import { PortfolioHeader } from "../PortfolioHeader";
-import { LeadParagraph } from "../../../../common/Paragraph/styled";
-import { StyledH3Error } from "./styled";
+import { MainParagraph } from "../../../../common/Paragraph/styled";
+import { DangerSVG, ErrorHeader } from "./styled";
 import { GitHubButton } from "./styled";
+import {ReactComponent as Danger} from "./../../../../assets/svg/danger.svg";
 
 export const LoadingError = () => (
-    <LoadingWrapper >
+    <LoadingSection >
         <PortfolioHeader />
-        <StyledH3Error>
+        <DangerSVG as={Danger} />
+        <ErrorHeader>
             Ooops! Something went wrong...
-        </StyledH3Error>
-        <LeadParagraph>
+        </ErrorHeader>
+        <MainParagraph>
             Sorry, failed to load Github projects. <br />
             You can check them directly on Github.
-        </LeadParagraph>
+        </MainParagraph>
         <GitHubButton
             href="https://github.com/Mikoli09?tab=repositories"
             title={"Mikoli09 repositories"}
@@ -22,5 +24,5 @@ export const LoadingError = () => (
         >
             Go to GitHub
         </GitHubButton>
-    </LoadingWrapper >
+    </LoadingSection >
 );

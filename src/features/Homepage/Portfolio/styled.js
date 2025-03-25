@@ -15,11 +15,15 @@ export const PortfolioSection = styled.section`
     padding: 0;
     margin: 0 36px;
     text-align: center;
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.tablet}px) {
+      margin: 0 16px;
+    }
 `;
 
-export const LoadingWrapper = styled(PortfolioSection)`
+export const LoadingSection = styled(PortfolioSection)`
     background-color: ${({ theme }) => theme.colors.section.portfolio.background} ;
-    padding: 0;
+    padding: 0 0 20px;
     margin: 0 36px;
     text-align: center;
 `;
@@ -62,5 +66,10 @@ export const Project = styled.li`
 
     @media (max-width: ${({ theme }) => theme.breakpoints.tablet}px) {
         max-width: 100%;
-  }
+        padding: 36px;
+
+    }
+      @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
+        padding: 24px;
+    }
 `;

@@ -1,5 +1,5 @@
 import { Project } from "../styled";
-import { ProjectLink, Description, StyledH3, StyledLinkContainer } from "./styled";
+import { Description, ProjectName } from "./styled";
 import { LinkContainer } from "../LinkContainer";
 
 export const ProjectItem = ({ project }) => {
@@ -7,7 +7,7 @@ export const ProjectItem = ({ project }) => {
 
     return (
         <Project>
-            <StyledH3>{name}</StyledH3>
+            <ProjectName>{name}</ProjectName>
             <Description>{description}</Description>
             <LinkContainer
                 description={"Demo:"}
@@ -20,4 +20,3 @@ export const ProjectItem = ({ project }) => {
         </Project>
     )
 };
-

@@ -4,10 +4,16 @@ export const StyledFooter = styled.footer`
     display: flex;
     flex-direction: column;
     padding: 0;
-    /* margin-top: 56px;
-    margin-bottom: 0; */
     margin: 56px 36px 0;
     text-align: left;
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.tablet}px) {
+        margin: 32px 16px 0;
+    }
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
+        margin: 32px 16px 0;
+    }
 `;
 
 export const SocialsList = styled.ul`
@@ -15,7 +21,7 @@ export const SocialsList = styled.ul`
     flex-direction: row;
     gap: 12px;
     margin-top: 0;
-    margin-bottom: 30px;
+    margin-bottom: 0;
     padding: 0;
     list-style: none;
 `;
@@ -28,7 +34,7 @@ export const StyleGitHub = styled.svg`
     height: auto;
     color: ${({ theme }) => theme.colors.link.hover};
 
-    @media (max-width: 800px) {
+    @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
         width: 32px;
     }
 `;
@@ -40,7 +46,7 @@ export const Link = styled.a`
     transition: 0.3s ;
     color: ${({ theme }) => theme.colors.link.icon};
 
-    @media (max-width: 800px) {
+    @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
         width: 32px;
     }
 
@@ -52,7 +58,7 @@ export const Link = styled.a`
 export const StyleIcon = Icon => styled(Icon)`
     height: auto;
 
-    @media (max-width: 800px) {
+    @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
         width: 32px;
     }
 `;

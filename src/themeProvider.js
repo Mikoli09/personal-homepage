@@ -1,8 +1,7 @@
-
-export const theme = {
+export const common = {
     breakpoints: {
-        mobile: 576,
-        tablet: 768,
+        mobile: 767,
+        tablet: 991,
     }
 };
 
@@ -24,7 +23,7 @@ const colors = {
 }
 
 export const ThemeLight = {
-    ...theme,
+    ...common,
     colors: {
         anchor: {
             text: colors.scienceBlue,
@@ -70,11 +69,11 @@ export const ThemeLight = {
                 shadowTop: colors.midnightNavy,
                 shadowBottom: colors.faintMidnightNavy,
             },
-            
         },
         button: {
             background: colors.scienceBlue,
             backgroundHover: colors.anakiwa,
+            text: colors.white,
         },
         buttonWrapper: {
             sun: colors.white,
@@ -84,26 +83,11 @@ export const ThemeLight = {
         marker: {
             fill: colors.scienceBlue,
         },
-        colors: {
-            whiteLilac: "#FBFBFE",
-            white: "#FFFFFF",
-            primaryColor: "teal",
-            lavenderMagenta: "#F490E1", // to delete
-            scienceBlue: "#0366D6",
-            mountainMist: "#959499",
-            slateGray: "#6E7E91",
-            mineShaft: "#252525",
-            mercury: "#E5E5E5",
-            iron: "rgba(209, 213, 218, 0.3)",
-            anakiwa: "#8CC2FF",
-        },
     },
 };
 
-console.log(ThemeLight);
-
 export const ThemeDark = {
-    ...theme,
+    ...common,
     colors: {
         anchor: {
             text: colors.scienceBlue,
@@ -153,6 +137,7 @@ export const ThemeDark = {
         button: {
             background: colors.scienceBlue,
             backgroundHover: colors.anakiwa,
+            text: colors.white,
         },
         buttonWrapper: {
             sun: colors.mineShaft,
@@ -161,19 +146,6 @@ export const ThemeDark = {
         },
         marker: {
             fill: colors.dodgerBlue,
-        },
-        colors: {
-            whiteLilac: "#FBFBFE",
-            white: "#FFFFFF",
-            primaryColor: "teal",
-            lavenderMagenta: "#F490E1", // to delete
-            scienceBlue: "#0366D6",
-            mountainMist: "#959499",
-            slateGray: "#6E7E91",
-            mineShaft: "#252525",
-            mercury: "#E5E5E5",
-            iron: "rgba(209, 213, 218, 0.3)",
-            anakiwa: "#8CC2FF",
         },
     },
 };

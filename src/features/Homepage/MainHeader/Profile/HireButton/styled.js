@@ -1,19 +1,21 @@
 import styled from "styled-components";
+import {ReactComponent as Envelope} from "./envelope.svg";
 
 export const HireButton = styled.a`
+    display: flex;
+    gap: 16px;
     width: 154px;
     height: 49px;
     padding: 12px 16px;
     margin: 8px auto 0px 0px;
-    /* margin-right: auto; */
     border: 1px;
     border-radius: 4px;
-    color: white;
-    background-color: ${({ theme }) => theme.colors.button.background};
     font-weight: 600;
-    font-size: 20.06px;
+    font-size: 20px;
     text-align: center;
     text-decoration: none;
+    color: ${({ theme }) => theme.colors.button.text};
+    background-color: ${({ theme }) => theme.colors.button.background};
     transition: 0.3s;
 
     &:hover {
@@ -24,4 +26,13 @@ export const HireButton = styled.a`
     &:active {
         box-shadow: 0 -2px 2px rgba(20, 70, 32, 0.2);
     }
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
+        gap: 12px;
+        margin: 0 auto 0 0;
+  }
+`;
+
+export const EnvelopeSVG = styled(Envelope)`
+    text-align:center;
 `;

@@ -1,18 +1,19 @@
-import { HireButton } from "./HireButton/styled";
-import { StyledHeaderContent } from "./styled";
+import { EnvelopeSVG, HireButton } from "./HireButton/styled";
+import { ProfileContainer } from "./styled";
 import { Caption } from "../../../../common/Caption/styled";
-import { HeaderName } from "../../../../common/H1/styled";
-import { LeadParagraph } from "../../../../common/Paragraph/styled";
+import { NameHeader } from "../../../../common/H1/styled";
+import { MainParagraph } from "../../../../common/Paragraph/styled";
 
 export const Profile = () => (
-    <StyledHeaderContent>
+    <ProfileContainer>
         <Caption>THIS IS</Caption>
-        <HeaderName>Marcin Osojca</HeaderName>
-        <LeadParagraph>
+        <NameHeader>Marcin Osojca</NameHeader>
+        <MainParagraph>
             I am a passionate React developer with experience in building responsive and dynamic web applications.
-        </LeadParagraph>
-        <HireButton
-            href="#contact"
-        >Hire me</HireButton>
-    </StyledHeaderContent>
+        </MainParagraph>
+        <HireButton href="#contact">
+            <EnvelopeSVG />
+            Hire me
+        </HireButton>
+    </ProfileContainer>
 );

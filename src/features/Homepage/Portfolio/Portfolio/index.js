@@ -12,9 +12,8 @@ export const PortfolioContainer = () => {
         < PortfolioSection >
             <PortfolioHeader />
             <PortfolioList>
-                {repositories.map((project) =>
-                    <ProjectItem project={project} />)
-                }
+                {repositories.map((project, index) =>
+                    <ProjectItem key={index} project={project} />)}
             </PortfolioList>
         </PortfolioSection >
     )

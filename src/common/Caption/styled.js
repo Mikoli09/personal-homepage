@@ -9,6 +9,11 @@ export const Caption = styled.p`
     margin-bottom: 12px;
     text-transform: uppercase;
 
+    @media (max-width: ${({ theme }) => theme.breakpoints.tablet}px) {
+        margin-top: 24px;
+        margin-bottom: 8px;
+    }
+
     @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
         margin-top: 16px;
         margin-bottom: 8px;

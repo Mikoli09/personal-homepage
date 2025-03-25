@@ -6,7 +6,7 @@ import { put } from "redux-saga/effects";
 
 function* getGitHubRepository() {
     try {
-        yield delay(2000);
+        yield delay(5000);
         const repositories = yield call(getUserRepositories);
         yield put(fetchRepositoriesSuccess(repositories));
     }

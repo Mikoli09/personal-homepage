@@ -5,7 +5,7 @@ export const List = styled.ul`
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 8px 115px;
-    padding: 32px 0px;
+    padding: 32px 0;
     margin:0;
     list-style: none;
     text-align: left;
@@ -19,22 +19,23 @@ export const List = styled.ul`
 
     @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
         grid-template-columns: 1fr;
+        padding: 12px 0 16px 0;
     }
 `;
 
 export const ListItem = styled.li`
     display: flex;
-    /* gap: 16px; */
     align-items: center;
     font-size: 18px;
     font-weight: 400;
-    padding-left: 0px;
+    padding-left: 0;
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
+        font-size: 14px;
+    }
 `;
 
 export const MarkerPic = styled(Marker)`
     margin-right: 16px;
     fill: ${({ theme }) => theme.colors.marker.fill};
-    /* display: inline-block; */
-    /* flex-shrink: 0; */
 `;
-

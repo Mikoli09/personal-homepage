@@ -27,15 +27,14 @@ export const SwitcherContainer = styled.div`
     align-items: center;
     justify-content: flex-end;
     gap: 10px;
-    top: 0px;
-    right: 0px; 
-
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    right: 0; 
     cursor: pointer;
 `;
 
-export const ModeLabel = styled(Caption)`
+export const ThemeLabel = styled(Caption)`
     margin-top: 0;
     margin-bottom: 0;
     z-index: 2;
@@ -55,17 +54,13 @@ export const StyledThemeButton = styled.button`
     z-index: 2;
     padding: 0;
     margin: 0;
-
-    top: 0px;
-    right: 0px; 
-
-    border: 1px solid;
-    border-color: ${({ theme }) => theme.colors.buttonWrapper.toggle};;
-    border-radius: 20px;
-
+    top: 0;
+    right: 0;
     cursor: pointer;
+    border: 1px solid;
+    border-radius: 20px;
     overflow: hidden;
-
+    border-color: ${({ theme }) => theme.colors.buttonWrapper.toggle};;
 `;
 
 export const ToggleSVG = styled(Toggle)`
@@ -88,7 +83,4 @@ export const ButtonWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-
-
-
 `;

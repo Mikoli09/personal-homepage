@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from "react-redux";
-import { SwitcherContainer, ModeLabel, ToggleSVG } from "./styled";
+import { SwitcherContainer, ThemeLabel } from "./styled";
 import { toggleTheme } from "../../homepageSlice";
 import { ThemeButton } from "./ThemeButton";
 import { selectThemeDark } from "../../homepageSlice";
@@ -10,8 +10,9 @@ export const ThemeSwitcher = () => {
 
     return (
         <SwitcherContainer onClick={() => dispatch(toggleTheme())}>
-            <ModeLabel>
-                Dark mode {isDarkTheme ? "on" : "off"}</ModeLabel>
+            <ThemeLabel>
+                Dark mode {isDarkTheme ? "ON" : "OFF"}
+            </ThemeLabel>
             <ThemeButton />
         </SwitcherContainer>
     )

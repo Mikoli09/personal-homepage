@@ -5,8 +5,9 @@ export const StyledHeader = styled.header`
     display: grid;
     grid-template-columns: auto 1fr;
     justify-content: center;
+    align-items: center;
     max-width: 1216px;
-    margin: 100px 36px;
+    margin: 0px 36px;
     gap: 72px;
     background-color: ${({ theme }) => theme.colors.mainHeader.background};
     z-index: 1;
@@ -14,6 +15,7 @@ export const StyledHeader = styled.header`
 
     @media(max-width:${({ theme }) => `${theme.breakpoints.mobile}px`}) {
         grid-template-columns: 1fr;
-        gap: 16px;
+        margin: 0 16px 48px;
+        gap: 0;
     }
 `;

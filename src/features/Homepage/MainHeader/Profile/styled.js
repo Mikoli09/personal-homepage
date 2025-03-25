@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
-export const StyledHeaderContent = styled.div`
-    /* position: relative; */
+export const ProfileContainer = styled.div`
     display:flex;
     justify-content: flex-start;
     flex-direction: column;

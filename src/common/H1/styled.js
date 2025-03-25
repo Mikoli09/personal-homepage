@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const HeaderName = styled.h1`
+export const NameHeader = styled.h1`
     font-size: 38px;
     font-weight: 900;
     margin: 0 0 35px 0;
@@ -29,6 +29,7 @@ export const FooterEmail = styled.a`
     }
 
     @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
-        margin: 0 0 16px 0;
+        font-size: 18px;
+        margin: 4px 0 12px 0;
     }
 `;
