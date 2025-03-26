@@ -1,8 +1,8 @@
-# Marcin Osojca - Personal Homepage
+# Personal Homepage - Marcin Osojca
 
 Welcome to my **Homepage**! 🚀   
-Here, you can learn more about my skills, projects, and what I'm passionate about.  
-Feel free to explore and reach out if you're interested in working together!
+his is where you can explore my skills, the projects I've worked on, and the technologies I'm exited to learn.  
+Feel free to browse, and don't hesitate to reach out if you'd like to collaborate or chat!
 
 ![homepageGIF](public/assets/homepage.gif)
 
@@ -28,14 +28,16 @@ Here are the technologies I used to build my portfolio:
 - **Styled Components** 💅  
   Scoped CSS for a more modular, maintainable codebase.  
 - **Redux** 🌍  
-  State management library for predictable application behavior.   
+  State management library for predictable application behavior. 
+- **Redux-Saga** 🌀  
+  A middleware for handling side effects in Redux, like async actions.  
 - **GitHub API** 🔗  
   Fetches my projects directly from my GitHub account.  
 - **Responsive Design** 📱💻  
   Fully optimized for desktop, tablet, and mobile.
 
 ### Demo:
-Check out the live version of my portfolio [here](https://mikoli09.github.io/portfolio/)
+Check out the live version of my portfolio [here](https://mikoli09.github.io/personal-homepage/)
 
 ### Contact:
 Feel free to reach out if you're interested in collaborating, want to chat, or just want to connect! Let's build something amazing together! ✨  

@@ -4,6 +4,7 @@ import { MainParagraph } from "../../../../common/Paragraph/styled";
 import { DangerSVG, ErrorHeader } from "./styled";
 import { GitHubButton } from "./styled";
 import {ReactComponent as Danger} from "./../../../../assets/svg/danger.svg";
+import GitHubPath from "../../../../assets/GitHubPath";
 
 export const LoadingError = () => (
     <LoadingSection >
@@ -17,7 +18,7 @@ export const LoadingError = () => (
             You can check them directly on Github.
         </MainParagraph>
         <GitHubButton
-            href="https://github.com/Mikoli09?tab=repositories"
+            href={GitHubPath}
             title={"Mikoli09 repositories"}
             target="_blank"
             rel="noopener noreferrer"
