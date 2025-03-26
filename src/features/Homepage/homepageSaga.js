@@ -5,11 +5,11 @@ import { put } from "redux-saga/effects";
 import { selectThemeDark } from "./homepageSlice";
 import { saveThemeInLocalStorage } from "../../themeLocalStorage";
 
-function* getGitHubRepositoryHandler({payload: username}) {
+function* getGitHubRepositoryHandler({ payload: username }) {
     console.log(username);
     try {
         yield delay(2000);
-        const repositories = yield call(getUserRepositories,username);
+        const repositories = yield call(getUserRepositories, username);
         yield put(fetchRepositoriesSuccess(repositories));
     }
     catch (error) {

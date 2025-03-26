@@ -14,6 +14,7 @@ const colors = {
     slateGray: "#6E7E91",
     mercury: "#E5E5E5",
     scienceBlue: "#0366D6",
+    scienceBlueHover:"#0250A0",
     anakiwa: "#8CC2FF",
     iron: "rgba(209, 213, 218, 0.3)",
     dodgerBlue: "#2188FF",
@@ -57,7 +58,8 @@ export const ThemeLight = {
         },
         link: {
             icon: colors.mineShaft,
-            hover: colors.scienceBlue,
+            text: colors.scienceBlue,
+            hover: colors.scienceBlueHover,
         },
         list: {
             text: colors.slateGray,
@@ -121,6 +123,7 @@ export const ThemeDark = {
         },
         link: {
             icon: colors.white,
+            text: colors.scienceBlue,
             hover: colors.dodgerBlue,
         },
         list: {
