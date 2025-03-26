@@ -7,7 +7,7 @@ export const StyledHeader = styled.header`
     justify-content: center;
     align-items: center;
     max-width: 1216px;
-    margin: 0px 36px;
+    margin: 0 36px;
     gap: 72px;
     background-color: ${({ theme }) => theme.colors.mainHeader.background};
     z-index: 1;

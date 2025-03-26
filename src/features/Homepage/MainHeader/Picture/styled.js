@@ -7,5 +7,4 @@ export const Picture = styled.img`
     max-height: 384px;
     min-width: 126px;
     border-radius: 50%;
-    object-fit: cover;
 `;

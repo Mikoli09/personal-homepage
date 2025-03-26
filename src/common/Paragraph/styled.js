@@ -15,11 +15,10 @@ export const MainParagraph = styled.p`
 `;
 
 export const FooterParagraph = styled(MainParagraph)`
-    margin-top: 0;
     margin-bottom: 56px;
     font-size: 18px;
     letter-spacing: 0.9px;
-    max-width: 691px;  // to verify
+    max-width: 691px;
     color: ${({theme}) => theme.colors.paragraph.FooterParagraph };
 
     @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {

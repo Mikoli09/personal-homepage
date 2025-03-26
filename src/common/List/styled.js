@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { ReactComponent as Marker } from './marker.svg'
+import { ReactComponent as Marker } from '../../assets/svg/marker.svg'
 
 export const List = styled.ul`
     display: grid;

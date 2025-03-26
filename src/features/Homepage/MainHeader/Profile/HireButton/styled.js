@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {ReactComponent as Envelope} from "./envelope.svg";
+import {ReactComponent as Envelope} from "../../../../../assets/svg/envelope.svg";
 
 export const HireButton = styled.a`
     display: flex;
