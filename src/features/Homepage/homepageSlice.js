@@ -1,17 +1,18 @@
 import { createSlice } from "@reduxjs/toolkit";
+import { getThemeFromLocalStorage } from "../../themeLocalStorage";
 
 const homepageSlice = createSlice({
     name: "myHomepage",
     initialState: {
         repositories: [],
-        pageThemeDark: false,
+        themeDark: getThemeFromLocalStorage(),
         status: "IDLE",
     },
     reducers: {
-        toggleTheme: (state, action) => {
-            state.pageThemeDark = !state.pageThemeDark;
+        toggleTheme: (state) => {
+            state.themeDark = !state.themeDark;
         },
-        fetchRepositoriesRequest: (state, action) => {
+        fetchRepositoriesRequest: (state) => {
             state.repositories = [];
             state.status = "LOADING";
         },
@@ -19,7 +20,7 @@ const homepageSlice = createSlice({
             state.repositories = repositories;
             state.status = "SUCCESS";
         },
-        fetchRepositoriesFailure: (state, action) => {
+        fetchRepositoriesFailure: (state) => {
             state.status = "ERROR";
         },
     }
@@ -27,7 +28,7 @@ const homepageSlice = createSlice({
 
 export const { toggleTheme, fetchRepositoriesRequest, fetchRepositoriesSuccess, fetchRepositoriesFailure } = homepageSlice.actions;
 
-export const selectThemeDark = (state) => state.homepage.pageThemeDark;
+export const selectThemeDark = (state) => state.homepage.themeDark;
 export const selectRepositories = (state) => state.homepage.repositories;
 export const selectStatus = (state) => state.homepage.status;
 

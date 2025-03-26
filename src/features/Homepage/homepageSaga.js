@@ -1,23 +1,29 @@
-import { call, delay, takeEvery, takeLatest } from "redux-saga/effects";
+import { call, delay, select, takeEvery, takeLatest } from "redux-saga/effects";
 import { getUserRepositories } from "./homepageAPI";
-import { fetchRepositoriesFailure, fetchRepositoriesRequest, fetchRepositoriesSuccess } from "./homepageSlice";
+import { fetchRepositoriesFailure, fetchRepositoriesRequest, fetchRepositoriesSuccess, toggleTheme } from "./homepageSlice";
 import { put } from "redux-saga/effects";
+import { selectThemeDark } from "./homepageSlice";
+import { saveThemeInLocalStorage } from "../../themeLocalStorage";
 
-
-function* getGitHubRepository() {
+function* getGitHubRepositoryHandler({payload: username}) {
+    console.log(username);
     try {
-        yield delay(5000);
-        const repositories = yield call(getUserRepositories);
+        yield delay(2000);
+        const repositories = yield call(getUserRepositories,username);
         yield put(fetchRepositoriesSuccess(repositories));
     }
     catch (error) {
         yield put(fetchRepositoriesFailure());
         throw error;
     }
-    // yield put(setLoadingFalse()); moze tak po zakonczeniu - resetowanie loading
 }
 
+function* setThemeInLocalStorageHandler() {
+    const darkTheme = yield select(selectThemeDark);
+    yield call(saveThemeInLocalStorage, darkTheme);
+}
 
 export function* homepageSaga() {
-    yield takeEvery(fetchRepositoriesRequest.type, getGitHubRepository);
+    yield takeEvery(fetchRepositoriesRequest.type, getGitHubRepositoryHandler);
+    yield takeLatest(toggleTheme.type, setThemeInLocalStorageHandler);
 }
