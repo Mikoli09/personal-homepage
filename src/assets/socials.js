@@ -1,6 +1,6 @@
-import {ReactComponent as LinkedIn} from './icons/LinkedIN_LM.svg'
-import {ReactComponent as GitHub} from './icons/Github_LM.svg'
-import { StyleIcon } from '../styled';
+import {ReactComponent as LinkedIn} from './svg/LinkedIN.svg';
+import {ReactComponent as GitHub} from './svg/Github.svg';
+import { StyleIcon } from '../features/Homepage/Footer/Socials/styled';
 
 export const socials = [
     {

@@ -9,7 +9,7 @@ export const Profile = () => (
         <Caption>THIS IS</Caption>
         <NameHeader>Marcin Osojca</NameHeader>
         <MainParagraph>
-            I am a passionate React developer with experience in building responsive and dynamic web applications.
+        💻⚙️ I'm a React Developer with a background as an Automation Engineer, bringing problem-solving skills to frontend development. Ready to grow and contribute in a dynamic team!
         </MainParagraph>
         <HireButton href="#contact">
             <EnvelopeSVG />

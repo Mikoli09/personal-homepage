@@ -1,6 +1,7 @@
 import { MainParagraph } from "../../../../common/Paragraph/styled";
-import { LoadingSection, SpinnerSVG } from "../styled";
+import { LoadingSection} from "../styled";
 import { PortfolioHeader } from "../PortfolioHeader";
+import { SpinnerSVG } from "./styled";
 
 export const Loading = () => (
     <LoadingSection>

@@ -1,6 +1,6 @@
-import { SocialsList, SocialsItem } from "../styled"
-import { socials } from "../data/socials"
-import { Link } from "../styled"
+import { SocialsList, SocialsItem} from "./styled";
+import { socials } from "../../../../assets/socials"
+import { Link } from "./styled";
 
 export const Socials = () => (
     <SocialsList>

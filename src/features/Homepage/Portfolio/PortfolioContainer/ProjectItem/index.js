@@ -1,4 +1,4 @@
-import { Project } from "../styled";
+import { Project } from "./styled";
 import { Description, ProjectName } from "./styled";
 import { LinkContainer } from "../LinkContainer";
 

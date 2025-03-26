@@ -1,7 +1,7 @@
 import { useSelector } from "react-redux";
 import { selectStatus } from "../homepageSlice";
 import { Loading } from "./Loading";
-import { PortfolioContainer } from "./Portfolio";
+import { PortfolioContainer } from "./PortfolioContainer";
 import { LoadingError } from "./LoadingError";
 import { useFetchRepositories } from "./useFetchRepositories";
 

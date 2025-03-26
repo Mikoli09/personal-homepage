@@ -2,7 +2,7 @@ import { PortfolioSection } from "../styled";
 import { PortfolioList } from "../styled";
 import { useSelector } from "react-redux";
 import { selectRepositories } from "../../homepageSlice";
-import { ProjectItem } from "../ProjectItem";
+import { ProjectItem } from "./ProjectItem";
 import { PortfolioHeader } from "../PortfolioHeader";
 
 export const PortfolioContainer = () => {
