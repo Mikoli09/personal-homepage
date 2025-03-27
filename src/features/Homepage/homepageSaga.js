@@ -6,7 +6,6 @@ import { selectThemeDark } from "./homepageSlice";
 import { saveThemeInLocalStorage } from "./themeLocalStorage";
 
 function* getGitHubRepositoryHandler({ payload: username }) {
-    console.log(username);
     try {
         yield delay(2000);
         const repositories = yield call(getUserRepositories, username);
