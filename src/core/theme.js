@@ -58,7 +58,7 @@ export const ThemeLight = {
         link: {
             icon: colors.mineShaft,
             text: colors.scienceBlue,
-            hover: colors.scienceBlueHover,
+            hover: colors.scienceBlue,
         },
         footerLink: {
             text: colors.mineShaft,
