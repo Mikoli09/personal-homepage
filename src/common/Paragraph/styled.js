@@ -14,6 +14,10 @@ export const MainParagraph = styled.p`
     }
 `;
 
+export const HeaderParagraph = styled(MainParagraph)`
+    max-width: 600px;
+`;
+
 export const FooterParagraph = styled(MainParagraph)`
     margin-bottom: 56px;
     font-size: 18px;
