@@ -3,7 +3,7 @@ import { getUserRepositories } from "./homepageAPI";
 import { fetchRepositoriesFailure, fetchRepositoriesRequest, fetchRepositoriesSuccess, toggleTheme } from "./homepageSlice";
 import { put } from "redux-saga/effects";
 import { selectThemeDark } from "./homepageSlice";
-import { saveThemeInLocalStorage } from "../../themeLocalStorage";
+import { saveThemeInLocalStorage } from "./themeLocalStorage";
 
 function* getGitHubRepositoryHandler({ payload: username }) {
     console.log(username);

@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { getThemeFromLocalStorage } from "../../themeLocalStorage";
+import { getThemeFromLocalStorage } from "./themeLocalStorage";
 
 const homepageSlice = createSlice({
     name: "myHomepage",

@@ -8,7 +8,7 @@ import { skillsList } from '../../assets/skillsList';
 import { toLearnList } from '../../assets/toLearnList';
 import { Portfolio } from '../../features/Homepage/Homepage/Portfolio';
 import { Footer } from '../../features/Homepage/Homepage/Footer';
-import { ThemeLight, ThemeDark } from '../themeProvider';
+import { ThemeLight, ThemeDark } from '../theme';
 import { selectThemeDark } from '../../features/Homepage/homepageSlice';
 import { useSelector } from 'react-redux';
 import { useRefreshDisable } from '../../useRefreshDisable';
