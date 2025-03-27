@@ -6,7 +6,7 @@ export const NameHeader = styled.h1`
     margin: 0 0 35px 0;
     padding: 0;
     line-height: 1.0;
-    color: ${({theme}) => theme.colors.header.headerName };
+    color: ${({ theme }) => theme.colors.header.headerName};
 
     @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
         margin: 0 0 16px 0;
@@ -21,11 +21,11 @@ export const FooterEmail = styled.a`
     padding: 0;
     line-height: 1.0;
     text-decoration: none;
-    color: ${({theme}) => theme.colors.header.headerName };
+    color: ${({ theme }) => theme.colors.footerLink.text};
     transition: 0.3s;
 
     &:hover {
-        color: ${({theme}) => theme.colors.link.hover };
+        color: ${({ theme }) => theme.colors.footerLink.hover};
     }
 
     @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {

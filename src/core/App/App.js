@@ -1,5 +1,5 @@
 import { ThemeProvider } from 'styled-components';
-import { GlobalStyle } from '../../GlobalStyle';
+import { GlobalStyle } from '../GlobalStyle';
 import { Header } from '../../features/Homepage/Homepage/MainHeader';
 import { MainContainer } from '../../common/MainContainer/styled';
 import { Section } from '../../features/Homepage/Homepage/SkillsSection';
@@ -8,7 +8,7 @@ import { skillsList } from '../../assets/skillsList';
 import { toLearnList } from '../../assets/toLearnList';
 import { Portfolio } from '../../features/Homepage/Homepage/Portfolio';
 import { Footer } from '../../features/Homepage/Homepage/Footer';
-import { ThemeLight, ThemeDark } from '../../themeProvider';
+import { ThemeLight, ThemeDark } from '../themeProvider';
 import { selectThemeDark } from '../../features/Homepage/homepageSlice';
 import { useSelector } from 'react-redux';
 import { useRefreshDisable } from '../../useRefreshDisable';

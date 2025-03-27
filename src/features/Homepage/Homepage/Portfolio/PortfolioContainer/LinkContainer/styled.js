@@ -38,7 +38,7 @@ export const StyledLinkContainer = styled.div`
     margin-top: 8px;
     margin-bottom: 0;
     width: 100%;
-    margin-top: 0px;
+    margin-top: 0;
     margin-bottom: 16px;
     font-size: 18px;
     font-weight: 400;

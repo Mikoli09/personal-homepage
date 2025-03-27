@@ -10,7 +10,7 @@ export const StyledThemeButton = styled.button`
     align-items:center;
     justify-content: center;
     z-index: 2;
-    padding: 0px;
+    padding: 0;
     margin: 0;
     top: 0;
     right: 0;

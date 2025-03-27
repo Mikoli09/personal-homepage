@@ -7,8 +7,8 @@ export const Project = styled.li`
     border-radius: 4px;
     border-color: ${({ theme }) => theme.colors.list.item.border};
     background-color: ${({ theme }) => theme.colors.list.item.background};
-    box-shadow: 0px 16px 58px 0px ${({ theme }) => theme.colors.list.item.shadowTop},
-                0px -2px 50px 0px ${({ theme }) => theme.colors.list.item.shadowBottom} ;
+    box-shadow: 0 16px 58px 0 ${({ theme }) => theme.colors.list.item.shadowTop},
+                0 -2px 50px 0 ${({ theme }) => theme.colors.list.item.shadowBottom} ;
     transition: 0.3s;
 
     &:hover {
@@ -31,7 +31,7 @@ export const ProjectName = styled.h3`
     font-weight: 700;
     letter-spacing: 1.2px;
     color: ${({ theme }) => theme.colors.header.h3};
-    margin-top: 0px;
+    margin-top: 0;
     margin-bottom: 24px;
     word-break: break-all;
 
@@ -42,7 +42,7 @@ export const ProjectName = styled.h3`
 
 export const Description = styled.p`
     display: inline-block;
-    margin-top: 0px;
+    margin-top: 0;
     margin-bottom: 16px;
     font-size: 18px;
     font-weight: 400;

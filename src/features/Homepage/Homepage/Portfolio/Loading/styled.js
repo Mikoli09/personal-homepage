@@ -13,6 +13,7 @@ const rotation = keyframes`
 export const SpinnerSVG = styled(Spinner)`
   width: auto;
   animation: ${rotation} 1s linear normal infinite ;
+  color: ${({ theme }) => theme.colors.spinner.fill} ;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
         width: 80px;

@@ -7,7 +7,7 @@ export const HireButton = styled.a`
     width: 154px;
     height: 49px;
     padding: 12px 16px;
-    margin: 8px auto 0px 0px;
+    margin: 8px auto 0 0;
     border: 1px;
     border-radius: 4px;
     font-weight: 600;
@@ -22,10 +22,6 @@ export const HireButton = styled.a`
         cursor: pointer;
         box-shadow: 0 0 0 2px ${({ theme }) => theme.colors.button.backgroundHover} ;
         }
-
-    &:active {
-        box-shadow: 0 -2px 2px rgba(20, 70, 32, 0.2);
-    }
 
     @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
         gap: 12px;

@@ -9,7 +9,7 @@ export const PortfolioContainer = () => {
     const repositories = useSelector(selectRepositories);
 
     return (
-        < PortfolioSection >
+        <PortfolioSection>
             <PortfolioHeader />
             <PortfolioList>
                 {repositories.map((project, index) =>

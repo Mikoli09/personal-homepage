@@ -13,7 +13,8 @@ export const Footer = () => (
             target="_blank"
             rel="noopener noreferrer"
         >
-            {mail}</FooterEmail>
+            {mail}
+        </FooterEmail>
         <FooterParagraph>
             I'm always excited to work on new projects! If you need a website, a dashboard, or a mobile app, I can help bring your ideas to life. Get in touch, and let's create something great together!
         </FooterParagraph>
