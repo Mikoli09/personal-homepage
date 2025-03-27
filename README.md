@@ -1,7 +1,7 @@
 # Personal Homepage - Marcin Osojca
 
 Welcome to my **Homepage**! 🚀   
-his is where you can explore my skills, the projects I've worked on, and the technologies I'm exited to learn.  
+This is where you can explore my skills, the projects I've worked on, and the technologies I'm exited to learn.  
 Feel free to browse, and don't hesitate to reach out if you'd like to collaborate or chat!
 
 ![homepageGIF](public/assets/homepage.gif)
@@ -41,7 +41,7 @@ Check out the live version of my portfolio [here](https://mikoli09.github.io/per
 
 ### Contact:
 Feel free to reach out if you're interested in collaborating, want to chat, or just want to connect! Let's build something amazing together! ✨  
-[Connect with me on LinkedIn](https://www.linkedin.com/in/mikoli09)  
+[Connect with me on LinkedIn](https://www.linkedin.com/in/marcin-osojca-17680313a/)  
 [Check out my GitHub](https://github.com/mikoli09)
 
 ---
