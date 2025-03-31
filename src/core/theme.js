@@ -84,6 +84,7 @@ export const ThemeLight = {
             sun: colors.white,
             toggle: colors.slateGray,
             border: colors.slateGray,
+            background: colors.mercury,
         },
         marker: {
             fill: colors.scienceBlue,
@@ -155,7 +156,8 @@ export const ThemeDark = {
         buttonWrapper: {
             sun: colors.mineShaft,
             toggle: colors.white,
-            border: colors.white
+            border: colors.white,
+            background: colors.mineShaftLight,
         },
         marker: {
             fill: colors.dodgerBlue,

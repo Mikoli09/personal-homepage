@@ -7,6 +7,8 @@ export const StyledSection = styled.section`
     padding: 0 32px; 
     background-color: ${({theme}) => theme.colors.section.background };
     transition: 0.3s;
+    box-shadow: 0 16px 58px 0 ${({ theme }) => theme.colors.list.item.shadowTop},
+                0 -2px 50px 0 ${({ theme }) => theme.colors.list.item.shadowBottom} ;
 
     @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
         margin: 48px 14px;

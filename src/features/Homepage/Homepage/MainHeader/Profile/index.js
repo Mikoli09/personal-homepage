@@ -1,8 +1,8 @@
 import { EnvelopeSVG, HireButton } from "./HireButton/styled";
 import { ProfileContainer } from "./styled";
 import { Caption } from "../../../../../common/Caption/styled";
-import { NameHeader } from "../../../../../common/H1/styled";
-import { MainParagraph, HeaderParagraph } from "../../../../../common/Paragraph/styled";
+import { NameHeader } from "../../../../../common/NameHeader/styled";
+import { HeaderParagraph } from "../../../../../common/Paragraph/styled";
 
 export const Profile = () => (
     <ProfileContainer>

@@ -1,4 +1,4 @@
-import styled, {css} from "styled-components";
+import styled, { css } from "styled-components";
 import { ReactComponent as Toggle } from '../../../../../../assets/svg/toggle.svg';
 import { ReactComponent as Sun } from '../../../../../../assets/svg/sun.svg';
 
@@ -18,7 +18,8 @@ export const StyledThemeButton = styled.button`
     border: 1px solid;
     border-radius: 20px;
     overflow: hidden;
-    border-color: ${({ theme }) => theme.colors.buttonWrapper.toggle};;
+    border-color: ${({ theme }) => theme.colors.buttonWrapper.toggle};
+    background-color: ${({ theme }) => theme.colors.buttonWrapper.background};
 `;
 
 export const ButtonWrapper = styled.div`
