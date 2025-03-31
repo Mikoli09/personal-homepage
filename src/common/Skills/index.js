@@ -7,6 +7,7 @@ export const Skills = ({ list }) => (
             <ListItem key={index}>
                 <MarkerPic />
                 {skill}
-            </ListItem>)}
+            </ListItem>
+        )}
     </List>
 );
