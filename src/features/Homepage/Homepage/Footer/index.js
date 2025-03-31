@@ -1,7 +1,7 @@
 import { FooterParagraph } from "../../../../common/Paragraph/styled";
 import { StyledFooter } from "./styled";
 import { Caption } from "../../../../common/Caption/styled";
-import { FooterEmail } from "../../../../common/H1/styled";
+import { FooterEmail } from "./styled";
 import { Socials } from "./Socials";
 import { mail } from "../../../../assets/contact";
 

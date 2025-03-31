@@ -15,3 +15,24 @@ export const StyledFooter = styled.footer`
         margin: 32px 16px 0;
     }
 `;
+
+export const FooterEmail = styled.a`
+    font-size: 32px;
+    margin-top: 12px;
+    margin-bottom: 24px;
+    font-weight: 900;
+    padding: 0;
+    line-height: 1.0;
+    text-decoration: none;
+    color: ${({ theme }) => theme.colors.footerLink.text};
+    transition: 0.3s;
+
+    &:hover {
+        color: ${({ theme }) => theme.colors.footerLink.hover};
+    }
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
+        font-size: 18px;
+        margin: 4px 0 12px 0;
+    }
+`;
