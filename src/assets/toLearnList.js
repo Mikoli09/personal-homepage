@@ -1,7 +1,8 @@
 export const toLearnList = [
-    "TypeScript",
     "Node.js",
+    "TanStack",
     "Vue.js",
     "Cypress",
     "Python",
+    "Next.js",
 ]
